@@ -1,0 +1,40 @@
+/* slider.css */
+
+.slider {
+  position: relative;
+  /* outline: 2px solid red; */
+  padding-bottom: 33.85%;
+}
+.slider > img {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  /* 전환효과 */
+  transition-duration: 1s;
+}
+.slider > img.show {
+  opacity: 1;
+}
+.indicator {
+  position: absolute;
+  bottom: 14px; left: 50%;
+  margin-left: -45px; 
+  z-index: 999;
+  opacity: 1;
+}
+.indicator > a {
+  display: block;
+  float: left;
+  font-size: 10px;
+  padding: 0px 8px;
+  margin: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.indicator > a.show {
+  width: 25px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #3a466a;
+}

@@ -1,0 +1,251 @@
+/* style.css */
+
+/* reset */
+* {
+  margin: 0; padding: 0;
+}
+ul { list-style-type: none;}
+a { 
+  text-decoration: none;
+  color: #35302d;
+}
+/* 공통 스타일 */
+.clear { clear: both;}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+}
+/*
+  page 폭: 1200px
+  main color: #3a466a
+  sub color: #00979f
+*/
+
+/* 헤더 영역 */
+#main_header {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ccc;
+}
+#main_header > h1 {
+  float: left;
+  margin-top: 40px;
+}
+/* util 메뉴 */
+#util {
+  float: right;
+}
+#util li {
+  float: left;
+  padding-top: 10px;
+  padding-right: 25px;
+  font-size: 12px;
+}
+#util li:nth-child(4) {
+  padding-left: 10px;
+  padding-right: 18px;
+}
+#util li:last-child {
+  padding-right: 0;
+}
+#util li img {
+  /* outline: 1px solid red; */
+  width: 20px; height: 20px;
+}
+/* 1단계 메뉴 */
+#main_gnb {
+  position: relative;
+  float: right;
+  margin-bottom: 10px;
+  /* margin-top: 30px; */
+}
+#main_gnb > .depth1 > li {
+  position: relative;
+  float: left;
+  margin-top: 40px;
+  /* outline: 1px solid green; */
+  border-bottom: 3px solid #fff; 
+  z-index: 99;
+  padding-bottom: 10px;
+  /* outline: 1px solid green; */
+}
+#main_gnb > .depth1 > li > a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 130px;
+}
+#main_gnb > .depth1 > li > a:last-child {
+
+}
+/* 호버시 메뉴 언더라인 효과 */
+#main_gnb > .depth1 > li:hover {
+  border-bottom: 3px solid #3a466a;
+}
+/* 2단계 메뉴 */
+#main_gnb .depth2.show {
+  padding-top: 10px;
+  height: 180px;
+  /* overflow: hidden; */
+  /* outline: 1px solid green; */
+  background: #fff;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+}
+#main_gnb .depth2 {
+  position: absolute;
+  transition-duration: 0.3s;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  top: 36px;
+}
+#main_gnb .depth2 li {
+  padding-top: 20px;
+  text-align: center;
+}
+#main_gnb .depth2 > a {
+  font-size: 12px;
+  display: block;
+}
+#main_gnb .depth2 li a:hover {
+  font-weight: bold;
+  color: #3a466a;
+}
+
+
+
+/* 배너 */
+
+#main {
+  position: relative;
+  min-width: 1200px;
+  max-width: 1920px;
+  height: 400px;
+  background-image: url("../images/store.jpg");
+  background-position: center;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+/* 메뉴리스트 */
+section.list > h1 {
+  color: #3a466a;
+  font-size: 30px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+section.list > h2 {
+  font-size: 18px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px ;
+}
+section.list {
+  background: white;
+  background-position: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.list {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 매장찾기 */
+#map_tit {
+  overflow: hidden;
+  width: 350px;
+  height: 600px;
+  float: right;
+  /* background: #ccc; */
+  /* border: 1px solid #ccc; */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#map_tit > h3 {
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  color: #3a466a;
+}
+#map_tit > .search {
+  background: #3a466a;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+#map_tit > .search > p {
+  padding-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+.search {
+  position: relative;
+}
+.search > input {
+  /* background: #000; */
+  width: 310px;
+  height: 30px;
+}
+.search > a {
+  position: absolute;
+  top: 24px; right: 20px;
+  z-index: 99;
+  padding: 4px;
+  margin-right: 3px;
+}
+#map_tit ul {
+ padding: 0px 20px;
+}
+#map_tit li {
+  padding-top: 20px;
+}
+#map_tit > .list h4 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+#map_tit .line {
+  display: block;
+  border-bottom: 0.5px solid #ccc;
+  width: 310px;
+  padding-top: 20px;
+}
+#map_tit .list p {
+  color: #666;
+}
+
+/* 푸터 */
+#main_footer {
+  clear: both;
+  width: 100%;
+  background: #1e1e1e;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+}
+#main_footer > h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#main_footer > p {
+  padding-bottom: 10px;
+}
+#main_footer > p a, #main_footer address{
+  padding-bottom: 10px;
+  font-style: normal;
+  color: #666;
+}
+
+#main_footer > p span {
+  font-weight: bold;
+}
+.copyright {
+  padding-top: 20px;
+  font-size: 12px;
+}

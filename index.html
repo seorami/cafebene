@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="카페베네, 커피프랜차이즈">
+  <title>카페베네</title>
+  <!-- 웹 폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- 폰트어썸: 아이콘 라이브러리 -->
+  <script src="https://kit.fontawesome.com/f3badcffe1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/slider.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 제이쿼리 -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+   <!-- 사용자 자바스크립트 -->
+   <script src="./js/slider.js"></script>
+   <script src="./js/main.js"></script>
+
+</head>
+<body>
+
+  <header id="main_header">
+    <h1>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="카페베네" width="180" height="28">
+      </a>
+    </h1>
+    <div id="util">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">매장찾기</a></li>
+          <li><a href="#"><img src="./images/insta.png" alt="insta"></a></li>
+          <li><a href="#"><img src="./images/facebook.png" alt="insta"></a></li>
+        </ul>
+      </div>
+    <nav id="main_gnb">
+<ul class="depth1">
+        <li><a href="page1-1.html">카페베네</a>
+          <ul class="depth2">
+            <li><a href="page1-1.html">브랜드스토리</a></li>
+            <li><a href="#">커피스토리</a></li>
+          </ul>
+        </li>
+        <li><a href="page2-1.html">메뉴</a>
+          <ul class="depth2">
+              <li><a href="page2-1.html">신메뉴</a></li>
+              <li><a href="#">인기메뉴</a></li>
+              <li><a href="#">커피</a></li>
+              <li><a href="#">음료&차</a></li>
+              <li><a href="#">디저트</a></li>
+            </ul>
+        </li>
+        <li><a href="page3-1.html">매장안내</a>
+          <ul class="depth2">
+              <li><a href="page3-1.html">매장찾기</a></li>
+            </ul>
+        </li>
+        <li><a href="#">커뮤니티</a>
+          <ul class="depth2 ">
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">소셜 카페베네</a></li>
+            </ul>
+        </li>
+        <li><a href="#">멤버쉽</a>
+          <ul class="depth2">
+              <li><a href="#">나의 멤버쉽</a></li>
+              <li><a href="#">멤버쉽 소개</a></li>
+              <li><a href="#">등급 및 혜택</a></li>
+              <li><a href="#">기프트&할인카드</a></li>
+            </ul>
+        </li>
+        <li><a href="#">창업안내</a>
+          <ul class="depth2">
+              <li><a href="#">개설안내</a></li>
+              <li><a href="#">창업 FAQ</a></li>
+              <li><a href="#">창업문의</a></li>
+              <li><a href="#">글로벌 매장</a></li>
+            </ul>
+        </li>
+        <li><a href="#">고객의 소리</a>
+          <ul class="depth2">
+            <li><a href="#">FAQ</a></li>
+            </ul>
+        </li>
+        
+      </ul> <!-- depth1 -->
+    </nav>
+  </header>
+
+  <section id="main_banner">
+    <div class="slider">
+      <img class="show" src="./images/banner1.jpg" alt="배너1"  id="pic1">
+      <img src="./images/banner2.jpg" alt="배너2" id="pic2">
+      <img src="./images/banner3.jpg" alt="배너3" id="pic3">
+      <div class="indicator">
+        <a class="show" href="#" id="in01">1</a>
+        <a href="#" id="in02">2</a>
+        <a href="#" id="in03">3</a>
+      </div>
+    </div>
+  </section>
+
+<!--content-->
+  <section id="content">
+    <h3>카페베네 메뉴</h3>
+    <span class="line"></span>
+    <a href="page2-1.html"><img src="./images/content1.jpg" alt="1"></a>
+  </section>
+  <section id="event">
+    <h3 >카페베네 이벤트</h3>
+    <span class="line"></span>
+    <a href="#"><img src="./images/content2.png" alt="2"></a>
+    <div class="christmas"> 
+      <iframe class="video" width="720" height="450" src="https://www.youtube.com/embed/ldoaHBmcRVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="#"><img src="./images/christmas.jpg" alt="christmas_banner"></a>
+    </div>
+
+  <section id="sns">
+    <h3 >카페베네 SNS</h3>
+    <span class="line"></span>
+    <a href="https://www.instagram.com/caffebene_official/"><img src="./images/content3.jpg" alt="3"></a>
+  </section>
+
+  </section>
+
+  <section id="info">
+    <div class="wrap">
+      <div class="info1">
+        <h2>창업안내</h2>
+        <a href="#"><img src="./images/info1.jpg" alt="창업안내"></a>
+      </div>
+
+      <div class="info2">
+        <h2>매장찾기</h2>
+        <a href="./page3-1.html"><img src="./images/info2.jpg" alt="매장찾기"></a>
+        <div class="search">
+          <input type="text" value="Find a Store">
+          <a href="./page3-1.html"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+
+      <div class="news">
+          <h3>카페베네 소식</h3>
+          <span class="line"></span>
+          <ul>
+            <li>
+              <a href="#">12월 베네데이 쿠폰 사용 가능 매장</a><span class="date">2019.12.02</span>
+            </li>
+            <li>
+              <a href="#">카페베네 마일리지 전환 서비스 종료 안내</a><span class="date">2019.12.02</span>
+            </li>
+            <li>
+              <a href="#">카페베네 하겐다즈 크리스마스 케이크 예약</a><span class="date">2019.12.02</span>
+            </li>
+            <!-- <li>
+              <a href="#">카페베네 2020 다이어리 세트 취급 매장 리스트</a><span class="date">2019.12.02</span>
+            </li>
+            <li>
+              <a href="#">독도강치 베네찌 이벤트 가능 매장 리스트</a><span class="date">2019.12.02</span>
+            </li> -->
+          </ul>
+          <p><a href="#">더보기 ></a></p>
+          <a href="#"><div class="news_banner"><img src="./images/info3.jpg" alt="뉴스배너"></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="main_popup">
+      <div class="popup">
+        <img src="./images/popup.jpg" alt="팝업">
+        <a class="more" href="#">자세히 보기 > </a>
+        <div class="close_box">
+          <a href="#" id="btn_close">X</a>
+        </div>
+      </div>
+      <script>
+        $(function(){
+          // 팝업창 표시
+          $('.popup').addClass('show');
+    
+          // 닫기 버튼 클릭시 팝업창 종료
+          $('#btn_close').click(function(){
+            $('.popup').removeClass('show');
+          });
+        });
+      </script>
+    </section>
+
+    <footer id="main_footer">
+      <h1><img src="./images/footer_logo.jpg" alt="caffebene" width="200px"
+        ></h1>
+      <p>
+        <a href="#"><span>개인정보처리방침</span></a> | 
+        <a href="#">이용약관</a> | 
+        <a href="#">회원탈퇴</a> | 
+        <a href="#">고객센터 1688-1666</a>
+      </p>
+      <p>대표이사: 박혜경 | 사업자등록번호: 206-86-29161 | 소비자 대표번호: 1688-4666 | 대표메일: benecs@caffebene.co.kr | 서울시 성동구 상원1길 25</p>
+      <p class="copyright">Copyright &copy; 2008 카페베네, All rights</p>
+    </footer>
+
+ 
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="카페베네, 커피프랜차이즈">
+  <title>신메뉴</title>
+  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./css/slider.css">
+  <!-- 웹 폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- 제이쿼리 -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <!-- 사용자 자바스크립트 -->
+  <script src="./js/main.js"></script>
+  <script src="./js/slider.js"></script>
+</head>
+
+<body>
+
+  <header id="main_header">
+    <h1>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="카페베네" width="180" height="28">
+      </a>
+    </h1>
+    <div id="util">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">매장찾기</a></li>
+        <li><a href="#"><img src="./images/insta.png" alt="insta"></a></li>
+          <li><a href="#"><img src="./images/facebook.png" alt="insta"></a></li>
+      </ul>
+    </div>
+    <nav id="main_gnb">
+      <ul class="depth1">
+        <li><a href="page1-1.html">카페베네</a>
+          <ul class="depth2">
+            <li><a href="page1-1.html">브랜드스토리</a></li>
+            <li><a href="#">커피스토리</a></li>
+          </ul>
+        </li>
+        <li><a href="page2-1.html">메뉴</a>
+          <ul class="depth2">
+            <li><a href="page2-1.html">신메뉴</a></li>
+            <li><a href="#">인기메뉴</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">음료&차</a></li>
+            <li><a href="#">디저트</a></li>
+          </ul>
+        </li>
+        <li><a href="page3-1.html">매장안내</a>
+          <ul class="depth2">
+            <li><a href="page3-1.html">매장찾기</a></li>
+          </ul>
+        </li>
+        <li><a href="#">커뮤니티</a>
+          <ul class="depth2 ">
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">소셜 카페베네</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+          </ul>
+        </li>
+        <li><a href="#">멤버쉽</a>
+          <ul class="depth2">
+            <li><a href="#">나의 멤버쉽</a></li>
+            <li><a href="#">멤버쉽 소개</a></li>
+            <li><a href="#">등급 및 혜택</a></li>
+            <li><a href="#">기프트&할인카드</a></li>
+          </ul>
+        </li>
+        <li><a href="#">창업안내</a>
+          <ul class="depth2">
+            <li><a href="#">개설안내</a></li>
+            <li><a href="#">창업 FAQ</a></li>
+            <li><a href="#">창업문의</a></li>
+            <li><a href="#">글로벌 매장</a></li>
+          </ul>
+        </li>
+        <li><a href="#">고객의 소리</a>
+          <ul class="depth2">
+            <li><a href="#">FAQ</a></li>
+            </ul>
+        </li>
+        
+      </ul> <!-- depth1 -->
+    </nav>
+  </header>
+
+  <section id="main">
+  </section>
+  <!-- 서브타이틀 -->
+
+  <div id="menu_btn">
+    <input type="radio" name="tab" id="first" checked="checked">
+    <input type="radio" name="tab" id="second">
+    <input type="radio" name="tab" id="third">
+    <input type="radio" name="tab" id="fourth">
+    <input type="radio" name="tab" id="fifth">
+
+    <div class="btns">
+      <label for="first">신메뉴</label>
+      <label for="second">인기메뉴</label>
+      <label for="third">커피</label>
+      <label for="fourth">음료&차</label>
+      <label for="fifth">디저트</label>
+    </div>
+  </div>
+
+  <!-- 신메뉴 -->
+  <section class="menu_list">
+    <h1>신메뉴</h1>
+    <h2>지금 바로 가까운 매장에서 카페베네 신메뉴를 만나 보실 수 있습니다.</h2>
+    <ul class="on">
+      <li>
+        <div class="thumb"><img src="images/01MenuImage_플랫화이트.png" alt="1">
+          <p class="menu_tit">플랫화이트</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">플랫화이트</h3>
+          <div class="menu_tit2">Flat White(ice)</div>
+          <span class="line"></span>
+          <p class="txt">에티오피아 시다모를 함께 블랜딩한 에스프레소에 미세한 입자의 스팀밀크를 혼합하여 화사하고 진한 향기가 가득한 호주식 커피</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/02MenuImage_시나몬라떼.png" alt="1">
+          <p class="menu_tit">시나몬라떼</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">시나몬라떼</h3>
+          <div class="menu_tit2">Flair Cinnamon Latte(HOT)</div>
+          <span class="line"></span>
+          <p class="txt">에티오피아 시다모를 함께 블랜딩한 에스프레소에 고소하고 부드러운 단맛을 내는 연유라떼로 시나몬스틱과 파우더를 더해 향을 가득 담은 커피</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/03MenuImage_연유라떼.png" alt="1">
+          <p class="menu_tit">연유라떼(HOT)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">연유라떼(HOT)</h3>
+          <div class="menu_tit2">Flair Condensed Milk Latte</div>
+          <span class="line"></span>
+          <p class="txt">에티오피아 시다모를 함께 블랜딩한 에스프레소에 달콤한 연유와 고소한 라떼가 조화롭게 어우러지는 부드러운 단맛의 스페인식 커피</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/04MenuImage_연유라떼아이스.png" alt="1">
+          <p class="menu_tit">연유라떼(ICE)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">연유라떼(ICE)</h3>
+          <div class="menu_tit2">Flair Condensed Milk Latte</div>
+          <span class="line"></span>
+          <p class="txt">에티오피아 시다모를 함께 블랜딩한 에스프레소에 달콤한 연유와 고소한 라떼가 조화롭게 어우러지는 부드러운 단맛의 스페인식 커피</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/05MenuImage_밤페스츄리 단품.png" alt="1">
+          <p class="menu_tit">밤페스츄리 와플(단품)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">밤페스츄리 와플(플레이트)</h3>
+          <div class="menu_tit2">Chestnut Pastry Waffle (Single)</div>
+          <span class="line"></span>
+          <p class="txt">바삭한 와플에 자라메설탕과 밤, 꿀과 함께 달콤한 초콜릿과 생크림을 함께 즐길 수 있는 메뉴</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/06MenuImage_밤페스츄리 플레이트.png" alt="1">
+          <p class="menu_tit">밤 페스츄리 와플(플레이트)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">밤 페스츄리 와플(플레이트)</h3>
+          <div class="menu_tit2">Chestnut Pastry Waffle (Plate)</div>
+          <span class="line"></span>
+          <p class="txt">바삭한 와플에 자라메설탕과 밤, 꿀과 함께 달콤한 초콜릿과 생크림을 함께 즐길 수 있는 메뉴</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/07MenuImage_홍시라떼라네.png" alt="1">
+          <p class="menu_tit">청도 홍시 라떼</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">청도 홍시 라떼</h3>
+          <div class="menu_tit2">Cheongdo Hongsi Latte</div>
+          <span class="line"></span>
+          <p class="txt">청도 홍시와 꿀의 달콤함과 우유가 만나 부드러운 홍시 라떼</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/08MenuImage_홍시주스라네.png" alt="1">
+          <p class="menu_tit">청도 홍시 주스</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">청도 홍시 주스</h3>
+          <div class="menu_tit2">Cheongdo Hongsi Juice</div>
+          <span class="line"></span>
+          <p class="txt">청도 홍시를 그대로 가득 담은 홍시 주스</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/09MenuImage_바밤라떼.png" alt="1">
+          <p class="menu_tit">바밤 라떼(HOT)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">바밤 라떼(HOT)</h3>
+          <div class="menu_tit2">Chestnut Latte(HOT)</div>
+          <span class="line"></span>
+          <p class="txt">꿀밤의 맛 그대로 밤크림과 함께 따뜻하게 즐기는 라떼</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/10MenuImage_바밤라떼 아이스.png" alt="1">
+          <p class="menu_tit">바밤 라떼(ICE)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">바밤 라떼(ICE)</h3>
+          <div class="menu_tit2">Chestnut Latte(ICE)</div>
+          <span class="line"></span>
+          <p class="txt">꿀밤의 맛과 밤크림으로 부드럽고 시원하게 즐기는 라떼</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/11MenuImage_아이스홍시.png" alt="1">
+          <p class="menu_tit">청도 아이스홍시</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">청도 아이스홍시</h3>
+          <div class="menu_tit2">Cheongdo Ice Hongsi</div>
+          <span class="line"></span>
+          <p class="txt">먹기 쉽게 껍질과 씨를 제거한 자연 그대로의 아이스 홍시에 꿀을 곁들여 시원하고 달콤하게 즐길 수 있는 디저트</p>
+        </div>
+      </li>
+      <li>
+        <div class="thumb"><img src="images/12MenuImage_홈페이지_민트초코.png" alt="1">
+          <p class="menu_tit">민트초코 라떼(ICE)</p>
+        </div>
+
+        <div class="hover">
+          <h3 class="font-bl">민트초코 라떼(ICE)</h3>
+          <div class="menu_tit2">Mint Choco Latte</div>
+          <span class="line"></span>
+          <p class="txt">카페베네의 리얼 초콜릿 라떼에 민트향을 더해 초콜릿의 달콤함과 민트의 상쾌함을 느낄 수 있는 라떼</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer id="main_footer">
+    <h1><img src="./images/footer_logo.jpg" alt="caffebene" width="200px"
+      ></h1>
+    <p>
+      <a href="#"><span>개인정보처리방침</span></a> | 
+      <a href="#">이용약관</a> | 
+      <a href="#">회원탈퇴</a> | 
+      <a href="#">고객센터 1688-1666</a>
+    </p>
+    <p>대표이사: 박혜경 | 사업자등록번호: 206-86-29161 | 소비자 대표번호: 1688-4666 | 대표메일: benecs@caffebene.co.kr | 서울시 성동구 상원1길 25</p>
+    <p class="copyright">Copyright &copy; 2008 카페베네, All rights</p>
+  </footer>
+
+</body>
+
+</html>

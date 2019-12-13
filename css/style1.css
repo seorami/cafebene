@@ -1,0 +1,234 @@
+/* style.css */
+
+/* reset */
+* {
+  margin: 0; padding: 0;
+}
+ul { list-style-type: none;}
+a { 
+  text-decoration: none;
+  color: #35302d;
+}
+/* 공통 스타일 */
+.clear { clear: both;}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+}
+/*
+  page 폭: 1200px
+  main color: #3a466a
+  sub color: #00979f
+*/
+
+/* 헤더 영역 */
+#main_header {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ccc;
+}
+#main_header > h1 {
+  float: left;
+  margin-top: 40px;
+}
+/* util 메뉴 */
+#util {
+  float: right;
+}
+#util li {
+  float: left;
+  padding-top: 10px;
+  padding-right: 25px;
+  font-size: 12px;
+}
+#util li:nth-child(4) {
+  padding-left: 10px;
+  padding-right: 18px;
+}
+#util li:last-child {
+  padding-right: 0;
+}
+#util li img {
+  /* outline: 1px solid red; */
+  width: 20px; height: 20px;
+}
+/* 1단계 메뉴 */
+#main_gnb {
+  position: relative;
+  float: right;
+  margin-bottom: 10px;
+  /* margin-top: 30px; */
+}
+#main_gnb > .depth1 > li {
+  position: relative;
+  float: left;
+  margin-top: 40px;
+  /* outline: 1px solid green; */
+  border-bottom: 3px solid #fff; 
+  z-index: 99;
+  padding-bottom: 10px;
+  /* outline: 1px solid green; */
+}
+#main_gnb > .depth1 > li > a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 130px;
+}
+#main_gnb > .depth1 > li > a:last-child {
+
+}
+/* 호버시 메뉴 언더라인 효과 */
+#main_gnb > .depth1 > li:hover {
+  border-bottom: 3px solid #3a466a;
+}
+/* 2단계 메뉴 */
+#main_gnb .depth2.show {
+  padding-top: 10px;
+  height: 180px;
+  /* overflow: hidden; */
+  /* outline: 1px solid green; */
+  background: #fff;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+}
+#main_gnb .depth2 {
+  position: absolute;
+  transition-duration: 0.3s;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  top: 36px;
+}
+#main_gnb .depth2 li {
+  padding-top: 20px;
+  text-align: center;
+}
+#main_gnb .depth2 > a {
+  font-size: 12px;
+  display: block;
+}
+#main_gnb .depth2 li a:hover {
+  font-weight: bold;
+  color: #3a466a;
+}
+
+/* 메인 배너 */
+#main {
+  position: relative;
+  min-width: 1200px;
+  max-width: 1920px;
+  height: 400px;
+  background-image: url("../images/co33.jpg");
+  background-position: center;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+/* 메뉴 버튼 */
+#menu_btn {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.btns {
+  position: relative;
+  left: 50%;
+  margin-left: -200px;
+}
+.btns > label {
+
+  display: block; 
+  float: left;
+  width: 200px; height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+.btns > label:hover {
+  background: #3a466a;
+  color: #fff;
+}
+input:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(2) {
+  display: none;
+}
+
+input:nth-of-type(1):checked ~ .btns > label:nth-of-type(1) {
+  background-color: #3a466a;
+  color: white;
+}
+input:nth-of-type(2):checked ~ .btns > label:nth-of-type(2) {
+  background-color: #3a466a;
+  color: white;
+}
+
+/* 컨텐츠 */
+#cont {
+  clear: both;
+  width: 1200px;
+  margin: 0 auto;
+}
+#cont  > div > h1 {
+  color: #3a466a;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+#cont  > div > h2  {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+#cont > .store {
+  margin-bottom: 80px;
+}
+#cont  > div > p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 60px;
+  color: #1e1e1e;
+}
+#main img { width: 100%;}
+
+/* 푸터 */
+#main_footer {
+  position: relative;
+  bottom: 0;
+  clear: both;
+  width: 100%;
+  background: #1e1e1e;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+}
+#main_footer > h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#main_footer > p {
+  padding-bottom: 10px;
+}
+#main_footer > p a, #main_footer address{
+  padding-bottom: 10px;
+  font-style: normal;
+  color: #666;
+}
+#main_footer > p span {
+  font-weight: bold;
+}
+.copyright {
+  padding-top: 20px;
+  font-size: 12px;
+}
